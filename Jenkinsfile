@@ -1,10 +1,8 @@
 pipeline {
     agent any
-
        tools{
         maven ('M2_HOME')
     }
-}
     environment {
     registry = '823008317281.dkr.ecr.us-west-2.amazonaws.com/school-site-repo'
     registryCredential = 'school-site-repo'
@@ -44,7 +42,10 @@ pipeline {
                 }
             }
         } 
-  }
+    }
+}
+    
+ 
 
 
 
